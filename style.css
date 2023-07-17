@@ -18,18 +18,16 @@ body > h2 {
 .badNews {
     display: grid;
     gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .img img {
     display: block;
     width: 100%;
-    margin: 20px;
 }
 .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 400px;
 }
 .info p {
     margin: 30px 0;
@@ -44,13 +42,16 @@ body > h2 {
     width: fit-content;
 }
 h3 {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     letter-spacing: 1px;
+    font-size: 1rem;
+    width: fit-content;
+}
+h3 strong {
+    color: black;
+    font-size: 1.5rem;
+    
 }
